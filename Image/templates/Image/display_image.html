@@ -1,0 +1,9 @@
+{% extends "Image/base.html" %}
+{% block title %} Dispaly Images {% endblock %}
+{% block body %}
+<h1> Generated Image</h1>
+<div class="col-md-4">
+    <img src="{{ gen_path }}"  />
+</div>
+<a href=" {% url 'Image:image_upload' %}"> Home </a>
+{% endblock %}
