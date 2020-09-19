@@ -6,6 +6,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <title> {% block title%} Neural Style Transfer {% endblock%}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kufam&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Kufam', cursive;
+            font-size: 2vw;
+        }
+        
+        .Image {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 50%;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        a {
+            text-decoration: none;
+            color: skyblue;
+            font-size: 25px;
+            margin: 10px 20px;
+        }
+        
+        a:hover {
+            color: white;
+        }
+        
+        h1 {
+            text-align: center;
+            font-size: 3vw;
+        }
+        
+        button {
+            color: white;
+            width: 50%;
+            text-align: center;
+            background-color: skyblue;
+            position: relative;
+            padding: 0.25em 0.5em;
+            text-decoration: none;
+            color: #FFF;
+            background: #03A9F4;
+            border: solid 1px #0f9ada;
+            border-radius: 4px;
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+            text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+            width: 30%;
+        }
+        
+        button:hover {
+            box-shadow: none;
+            text-shadow: none;
+            background: #3099C8;
+        }
+        
+        #form {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .row {
+            display: flex;
+            margin: 10px 10px;
+            text-align: center;
+            justify-content: center;
+        }
+        
+        form {
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-content: center
+        }
+    </style>
 </head>
 
 <body>
